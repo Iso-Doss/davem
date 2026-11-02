@@ -61,3 +61,9 @@ export const POLE_COLORS = {
   evenements: 'var(--gold)',
   logistique: 'var(--red-ui)',
 }
+
+/* Numéros de téléphone DAVEM */
+export const PHONES = [
+  { label: '+229 01 97 57 71 02', tel: '+2290197577102' },
+  { label: '+229 01 40 50 37 03', tel: '+2290140503703' },
+]

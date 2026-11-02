@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Icon, POLE_COLORS } from './ui.jsx'
+import { Icon, POLE_COLORS, PHONES } from './ui.jsx'
 
 /* Envoi de la demande.
    À brancher avant la mise en ligne : Formspree, Netlify Forms, une API ou un service d'e-mail.
@@ -103,7 +103,7 @@ export default function ContactForm({ t, lang }) {
             <Icon name="phone" className="quick-icon" />
             <div>
               <p>{c.quick}</p>
-              <p className="quick-num">{c.coords.phoneValue}</p>
+              <p className="quick-num">{PHONES.map((ph) => <a key={ph.tel} href={`tel:${ph.tel}`}>{ph.label}</a>)}</p>
               <p className="quick-mail">{c.coords.emailValue} · {c.coords.addressValue}</p>
             </div>
           </div>
