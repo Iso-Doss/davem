@@ -36,7 +36,7 @@ function Header({ t, lang, setLang, theme, setTheme }) {
     <header className="header">
       <div className="wrap header-row">
         <a href="#top" className="brand" onClick={close}>
-          <Logo tagline={t.hero.eyebrow} className="brand-logo" />
+          <Logo tagline={t.tagline} className="brand-logo" />
         </a>
         <nav id="nav" className={open ? 'nav open' : 'nav'} aria-label="Navigation principale">
           <a href="#services" onClick={close}>{t.nav.services}</a>
@@ -164,7 +164,8 @@ function Footer({ t }) {
     <footer className="footer">
       <div className="wrap footer-grid">
         <div className="footer-brand">
-          <Logo tagline={t.hero.eyebrow} className="footer-logo" mono />
+          <Logo tagline={t.tagline} className="footer-logo" mono />
+          <p className="footer-slogan">{t.slogan}</p>
         </div>
         <nav aria-label={t.nav.services}>
           <a href="#services">{t.nav.services}</a>

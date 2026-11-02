@@ -489,6 +489,7 @@ textarea { resize: vertical; }
 .footer-brand { display: grid; gap: 14px; align-content: start; }
 .footer-brand p { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #8B97A8; }
 .footer-logo { height: 52px; width: auto; }
+.footer-slogan { font-family: var(--display); font-stretch: 112%; font-weight: 700; font-size: 18px; color: var(--gold); }
 .footer nav { display: grid; gap: 10px; align-content: start; }
 .footer nav a { text-decoration: none; }
 .footer nav a:hover { color: #fff; }
